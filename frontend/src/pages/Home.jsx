@@ -8,7 +8,7 @@ const Home = ({ isDark }) => {
     setLoading(true);
     setRoast("");
     try {
-      const response = await fetch("http://localhost:5000/roast", {
+      const response = await fetch("https://coderoaster-ai.onrender.com/roast", {
         method: "POST",
         body: JSON.stringify({ code }),
         headers: {
