@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Home from "./pages/Home.jsx";
-
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
@@ -15,7 +14,6 @@ function App() {
   useEffect(() => {
     localStorage.setItem("theme", darkMode ? "dark" : "light");
   });
-
   return (
     <>
       <div
@@ -31,10 +29,9 @@ function App() {
             {darkMode ? "☀️" : "🌙"}
           </button>
         </nav>
-        <Home isDark={darkMode}/>
+        <Home isDark={darkMode} />
       </div>
     </>
   );
 }
-
 export default App;
