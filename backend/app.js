@@ -1,6 +1,13 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-require("dotenv").config();
+const mongoose = require('mongoose');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/roastDB')
+.then(() => {
+  console.log(`MongoDB Connected: database connected successfully`)
+}).catch((error) => {
+  console.error(`Error: ${error.message}`);
+})
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const app = express();
 const port = 5000 || process.env.PORT;
