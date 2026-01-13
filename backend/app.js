@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/roastDB')
-.then((conn) => {
+.then(() => {
   console.log(`MongoDB Connected: database connected successfully`)
 }).catch((error) => {
   console.error(`Error: ${error.message}`);
