@@ -2,7 +2,8 @@
 
 An AI-powered web application that "roasts" your code. It uses Google's Gemini AI to provide funny, sarcastic, but useful feedback on your code snippets.
 
-![Project Screenshot](https://via.placeholder.com/800x400?text=App+Screenshot+Here)
+<img width="1908" height="976" alt="image" src="https://github.com/user-attachments/assets/35bcee3c-1055-42af-afac-8d9f8d749a2c" />
+
 
 ## 🚀 Features
 * **AI Analysis:** Uses Google Gemini 1.5 Flash to analyze code.
